@@ -1,8 +1,10 @@
 
 :root {
     --header-height: 11vh;
-    --header-borders: 0.4vh;
+    --borders: 0.4vh;
     --header-content-height: calc(var(--header-height)*6/7);
+    --footer-height: 8vh;
+    --footer-content-height: calc(var(--footer-height)*6/7)
 }
 html {
     scroll-padding-top: var(--header-height);
@@ -36,6 +38,7 @@ header nav a:hover {
     text-decoration: underline;
     text-decoration-color: white;
 }
+
 header {
     background-color: #9bcc9a;
     position: fixed;
@@ -45,14 +48,14 @@ header {
     height: var(--header-content-height);
     padding: calc(var(--header-height)/7);
     overflow: hidden;
-    border-bottom: var(--header-borders) solid black;
+    border-bottom: var(--borders) solid black;
 }
 header #logo {
     object-fit: contain;
-    border: var(--header-borders) solid black; 
+    border: var(--borders) solid black; 
     float: left;
     border-radius: 2vh;
-    height: calc(100% - 2*var(--header-borders));
+    height: calc(100% - 2*var(--borders));
     margin-right: 1.5%;
 }
 header #header-text {
@@ -68,4 +71,25 @@ li a:visited {
 }
 img {
     border-radius: 2vh;
+}
+
+footer {
+    position: sticky;
+    border-top: var(--borders) solid black;
+    width: 100%;
+    background-color: #208520;
+    height: var(--footer-content-height);
+    padding: calc(var(--footer-height)/7);
+}
+
+.dark_green {
+    color:#175e17;
+}
+
+#footer-text {
+    text-align: center;
+    color: white;
+    font-family: "SF UI Display", "Arial", sans-serif;
+    line-height: var(--footer-content-height);
+    font-size: calc(var(--header-height)*.4)
 }

@@ -5,17 +5,16 @@
     <title>2 задание</title>
     <link rel="stylesheet" href="styles.css">
   </head>
-  <header>
-    <nav>
-      <a href="https://kubsu.ru/" target="_blank">Сайт КубГУ</a>
-      <a href="https://github.com/xromza/" target="_blank">Github</a>
-      <a href="#form">Оставить заявку</a>
-    </nav>
-    <img id="logo" src="logo.png">
-    <div id="header-text" >Задание 2</div>
-  </header>
-  <body style="margin: 0">
-    <main>
+  <body>
+    <header>
+      <nav>
+        <a href="https://kubsu.ru/" target="_blank">Сайт КубГУ</a>
+        <a href="https://github.com/xromza/" target="_blank">Github</a>
+        <a href="#form">Оставить заявку</a>
+      </nav>
+      <img id="logo" src="logo.png" alt="logo">
+      <div id="header-text" >Задание 2</div>
+    </header>
     <ol>
       <li><a id="httpkubsu" href="http://kubsu.ru/">КубГУ HTTP</a></li>
       <li><a href="https://kubsu.ru/">КубГУ HTTPS</a></li>
@@ -56,18 +55,28 @@
       <li>
         <ol>
           <li>
-            <a title="ссылка1">Первая ссылка</a>
+            <a class="dark_green" title="ссылка1">Первая ссылка</a>
           </li>
           <li>
-            <a title="ссылка2">Вторая ссылка</a>
+            <a class="dark_green" title="ссылка2">Вторая ссылка</a>
           </li>
           <li>
-            <a title="ссылка3">Третья ссылка</a>
+            <a class="dark_green" title="ссылка3">Третья ссылка</a>
           </li>
         </ol>
       </li>
       <li><a href="ftp://login:password@127.0.0.1:21/file.txt">Ссылка на FTP-сервер с авторизацией</a></li>
-      <li>
+      <table>
+        <label><h2>Таблица</h2></label>
+        <thead>
+          <tr>
+            <th>Время</th>
+            <th>Понедельник</th>
+            <th>Вторник</th>
+            <th>Среда</th>  
+          </tr>
+        </thead>
+      </table>
         <h2>Форма</h2>
         <form method="POST" class="contact-form" id="form" style="display: flex; flex-direction: column; max-width: 20em; text-align: center;">
           <!--Поле ввода ФИО-->
@@ -112,13 +121,17 @@
           <textarea name="bio" id="bio" rows="10" placeholder="Ваша биография"></textarea>
 
           <!--Кнопка "с контрактом ознакомлен"-->
-          <label style="text-align: left;">С контрактом ознакомлен(-а) <input type="checkbox" id="contractacceptance" name="contractacceptance"></label>
+          <label style="text-align: left;">С контрактом ознакомлен(-а) <input required type="checkbox" id="contractacceptance" name="contractacceptance"></label>
           <!--Кнопка отправки-->
           <button type="submit">Сохранить</button>
         </form>
       </li>
     </ol>
-  </main>
+    <footer>
+      <div id="footer-text">
+        made by xromza | 2025
+      </div>
+    </footer>
   </body>
 </html>
        
