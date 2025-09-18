@@ -1,18 +1,21 @@
  <!DOCTYPE html> 
 <html lang="ru">
-    <head>
-      <meta charset="utf-8">
-      <title>1 задание</title>
-      <style>
-        input, select{
-          margin-bottom: 1em;
-        }
-        button {
-          margin-top: 2em;
-        }
-      </style>
-    </head>
-  <body>
+  <head>
+    <meta charset="utf-8">
+    <title>2 задание</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <header>
+    <nav>
+      <a href="https://kubsu.ru/" target="_blank">Сайт КубГУ</a>
+      <a href="https://github.com/xromza/" target="_blank">Github</a>
+      <a href="#form">Оставить заявку</a>
+    </nav>
+    <img id="logo" src="logo.png">
+    <div id="header-text" >Задание 2</div>
+  </header>
+  <body style="margin: 0">
+    <main>
     <ol>
       <li><a id="httpkubsu" href="http://kubsu.ru/">КубГУ HTTP</a></li>
       <li><a href="https://kubsu.ru/">КубГУ HTTPS</a></li>
@@ -66,7 +69,7 @@
       <li><a href="ftp://login:password@127.0.0.1:21/file.txt">Ссылка на FTP-сервер с авторизацией</a></li>
       <li>
         <h2>Форма</h2>
-        <form method="POST" style="display: flex; flex-direction: column; max-width: 20em; text-align: center;">
+        <form method="POST" class="contact-form" id="form" style="display: flex; flex-direction: column; max-width: 20em; text-align: center;">
           <!--Поле ввода ФИО-->
           <label for="name">ФИО:</label>
           <input type="text" id="name" name="name" placeholder="Введите своё ФИО">
@@ -115,7 +118,7 @@
         </form>
       </li>
     </ol>
-
+  </main>
   </body>
 </html>
        

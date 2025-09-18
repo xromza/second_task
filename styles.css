@@ -1,0 +1,71 @@
+
+:root {
+    --header-height: 11vh;
+    --header-borders: 0.4vh;
+    --header-content-height: calc(var(--header-height)*6/7);
+}
+html {
+    scroll-padding-top: var(--header-height);
+}
+
+.contact-form {
+    display: flex; 
+    flex-direction: column; 
+    max-width: 20em; 
+    text-align: center;
+}
+
+body {
+    background-color: #f4fff4;
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    padding-top: var(--header-height);
+}
+header nav {
+    float: right;
+    padding-right:3vw;
+}
+header nav a {
+    text-decoration: none;
+    font-size: calc(var(--header-height)*.33);
+    line-height: var(--header-content-height);
+    padding-right: 2vw;
+    color: white;
+}
+header nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+header {
+    background-color: #9bcc9a;
+    position: fixed;
+    top:0;
+    width:100%;
+    font-family: "SF UI Display", "Arial", sans-serif;
+    height: var(--header-content-height);
+    padding: calc(var(--header-height)/7);
+    overflow: hidden;
+    border-bottom: var(--header-borders) solid black;
+}
+header #logo {
+    object-fit: contain;
+    border: var(--header-borders) solid black; 
+    float: left;
+    border-radius: 2vh;
+    height: calc(100% - 2*var(--header-borders));
+    margin-right: 1.5%;
+}
+header #header-text {
+    line-height: var(--header-content-height);          
+    font-size: calc(var(--header-height)*.5);                                                          
+    color: white;
+}
+li a {
+    color: #56af56;
+}
+li a:visited {
+    color: #208520;
+}
+img {
+    border-radius: 2vh;
+}
