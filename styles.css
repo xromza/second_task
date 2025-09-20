@@ -1,5 +1,5 @@
 :root {
-    --header-height: 11vh;
+    --header-height: 8vh;
     --borders: 0.4vh;
     --header-content-height: calc(var(--header-height)*6/7);
     --footer-height: 8vh;
@@ -37,15 +37,16 @@ body {
     margin: 0;
     font-family: "Arial", sans-serif;
     padding-top: var(--header-height);
+    font-family: "SF UI Display", "Montserrat", "Arial", sans-serif;
 }
 header nav {
     float: right;
-    padding-right:3vw;
+    padding-right:3%;
 }
 header nav a {
     text-decoration: none;
-    font-size: calc(var(--header-height)*.33);
-    line-height: var(--header-content-height);
+    font-size: calc(var(--header-height)*.4);
+line-height: var(--header-content-height);
     padding-right: 2vw;
     color: white;
 }
@@ -59,7 +60,8 @@ header {
     position: fixed;
     top:0;
     width:100%;
-    font-family: "SF UI Display", "Arial", sans-serif;
+    font-family: "SF UI Display", "Montserrat", "Arial", sans-serif;
+    font-weight: bold;
     height: var(--header-content-height);
     padding: calc(var(--header-height)/7);
     overflow: hidden;
@@ -74,7 +76,12 @@ header #logo {
     margin-right: 1.5%;
 }
 
-header #header-text {
+#form label {
+    margin-top: 2vh;
+    margin-bottom: .33vh;
+}
+
+#header-text {
     line-height: var(--header-content-height);          
     font-size: calc(var(--header-height)*.5);                                                          
     color: white;
@@ -105,15 +112,16 @@ footer {
 #footer-text {
     text-align: center;
     color: white;
-    font-family: "SF UI Display", "Arial", sans-serif;
+    font-family: "SF UI Display", "Montserrat", "Arial", sans-serif;
+    font-weight: bold;
     line-height: var(--footer-content-height);
-    font-size: calc(var(--header-height)*.4)
+    font-size: calc(var(--footer-height)*.4)
 }
 table {
     margin: auto;
     text-align: center;
     border-collapse: collapse;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
     border-radius: 2px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -123,6 +131,7 @@ th {
     padding: .3rem;
     border: 2px solid black;
 }
+
 td {
     text-wrap: nowrap;
     padding: 0.3em;
