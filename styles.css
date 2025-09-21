@@ -37,7 +37,7 @@ body {
     margin: 0;
     font-family: "Arial", sans-serif;
     padding-top: var(--header-height);
-    font-family: "SF UI Display", "Montserrat", "Arial", sans-serif;
+    font-family: "Montserrat", "Arial", sans-serif;
 }
 header nav {
     float: right;
@@ -60,7 +60,7 @@ header {
     position: fixed;
     top:0;
     width:100%;
-    font-family: "SF UI Display", "Montserrat", "Arial", sans-serif;
+    font-family: "Montserrat", "Arial", sans-serif;
     font-weight: bold;
     height: var(--header-content-height);
     padding: calc(var(--header-height)/7);
@@ -112,7 +112,7 @@ footer {
 #footer-text {
     text-align: center;
     color: white;
-    font-family: "SF UI Display", "Montserrat", "Arial", sans-serif;
+    font-family: "Montserrat", "Arial", sans-serif;
     font-weight: bold;
     line-height: var(--footer-content-height);
     font-size: calc(var(--footer-height)*.4)
